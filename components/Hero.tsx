@@ -3,6 +3,14 @@ import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { portfolioItems } from "@/data/portfolio";
 import { contact } from "@/data/site";
 
+function splitWords(text: string) {
+  return text.split(" ").map((word, i) => (
+    <span key={i} className="split-word">
+      {word}{" "}
+    </span>
+  ));
+}
+
 export function Hero() {
   const previewItems = portfolioItems.slice(0, 3);
 
@@ -12,8 +20,8 @@ export function Hero() {
         <p className="section-kicker" data-reveal>
           Independent Web Designer & Developer
         </p>
-        <h1 data-reveal>
-          Building websites that look sharp, load fast, and help brands win online.
+        <h1 data-split>
+          {splitWords("Building websites that look sharp, load fast, and help brands win online.")}
         </h1>
         <div className="hero__copy" data-reveal>
           <p>

@@ -1,4 +1,5 @@
 import { About } from "@/components/About";
+import { BackgroundBoxes } from "@/components/BackgroundBoxes";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -15,6 +16,7 @@ export default function Home() {
     <>
       <Preloader />
       <MotionProvider />
+      <BackgroundBoxes />
       <Header />
       <main>
         <Hero />

@@ -1,19 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import gsap from "gsap";
 
 export function Preloader() {
   const [progress, setProgress] = useState(0);
   const [isComplete, setIsComplete] = useState(false);
 
   useEffect(() => {
-    const gsap: GsapType = (window as unknown as Window).gsap;
-
-    if (!gsap) {
-      setIsComplete(true);
-      return;
-    }
-
     const counter = { value: 0 };
     const timeline = gsap.timeline({
       defaults: { ease: "power3.out" },

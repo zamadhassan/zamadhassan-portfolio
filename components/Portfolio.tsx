@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState, type CSSProperties } from "react";
+import gsap from "gsap";
 import { ArrowUpRight, Maximize2, X } from "lucide-react";
 import { portfolioItems } from "@/data/portfolio";
 import { contact } from "@/data/site";
@@ -22,7 +23,6 @@ export function Portfolio() {
       return;
     }
 
-    const gsap: GsapType = (window as unknown as Window).gsap;
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
 
@@ -60,7 +60,6 @@ export function Portfolio() {
   }, [activeProject]);
 
   const closeModal = () => {
-    const gsap: GsapType = (window as unknown as Window).gsap;
     const overlay = overlayRef.current;
     const panel = panelRef.current;
 
