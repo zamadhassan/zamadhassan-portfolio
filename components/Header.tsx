@@ -9,7 +9,7 @@ export function Header() {
 
   return (
     <header className="site-header">
-      <a className="site-header__brand" href="#home" aria-label="Zamad Hassan home">
+      <a className="site-header__brand" href="/#home" aria-label="Zamad Hassan home">
         ZAMAD HASSAN
       </a>
 

@@ -44,7 +44,7 @@ export function Footer() {
 
       <div className="footer__bottom">
         <span>2026 Zamad Hassan</span>
-        <a href="#home">Back to top</a>
+        <a href="/#home">Back to top</a>
       </div>
     </footer>
   );

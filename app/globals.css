@@ -948,6 +948,114 @@ p {
   padding: 8px 10px;
 }
 
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.blog-card {
+  display: flex;
+  min-height: 390px;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 28px;
+}
+
+.blog-card__meta,
+.blog-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  color: var(--muted-strong);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.blog-card h3 {
+  margin-bottom: 18px;
+}
+
+.blog-card__footer a,
+.blog-post__back,
+.blog-post__cta a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  text-transform: none;
+}
+
+.blog-post {
+  padding-top: 148px;
+}
+
+.blog-post__back {
+  width: fit-content;
+  margin-bottom: 56px;
+  color: var(--muted-strong);
+}
+
+.blog-post__header {
+  max-width: 1120px;
+}
+
+.blog-post__header h1,
+.not-found h1 {
+  font-size: clamp(3.5rem, 9vw, 9.2rem);
+}
+
+.blog-post__header p:last-child,
+.not-found > p {
+  max-width: 760px;
+  margin-top: 28px;
+}
+
+.blog-post__body {
+  display: grid;
+  gap: 16px;
+  margin-top: 72px;
+}
+
+.blog-post__section {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.75fr) minmax(320px, 1.25fr);
+  gap: 48px;
+  padding: 32px;
+}
+
+.blog-post__section h2 {
+  font-size: clamp(1.6rem, 3vw, 3.4rem);
+}
+
+.blog-post__cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  border-top: 1px solid var(--line);
+  padding: 28px;
+  gap: 20px;
+  color: var(--muted-strong);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.not-found {
+  display: grid;
+  min-height: 100vh;
+  align-content: center;
+}
+
+.not-found__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 36px;
+}
+
 .contact {
   display: grid;
   grid-template-columns: minmax(280px, 0.9fr) minmax(320px, 1.1fr);
@@ -1092,9 +1200,14 @@ p {
   }
 
   .stats-grid,
+  .blog-grid,
   .services-grid,
   .portfolio-metrics {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .blog-post__section {
+    grid-template-columns: 1fr;
   }
 
   .case-card {
@@ -1161,6 +1274,7 @@ p {
   }
 
   .services-grid,
+  .blog-grid,
   .testimonials-grid,
   .stats-grid,
   .portfolio-metrics,
@@ -1181,6 +1295,11 @@ p {
   }
 
   .portfolio__cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .blog-post__cta {
     align-items: flex-start;
     flex-direction: column;
   }
@@ -1237,6 +1356,8 @@ p {
 
   .project-card__content,
   .service-card,
+  .blog-card,
+  .blog-post__section,
   .testimonial-card,
   .contact-card {
     padding: 20px;
@@ -1282,6 +1403,7 @@ p {
 .button,
 .glass-panel,
 .contact-card,
+.blog-card,
 .testimonial-card,
 .service-card {
   will-change: transform;

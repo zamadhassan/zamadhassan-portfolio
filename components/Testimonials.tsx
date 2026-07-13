@@ -6,7 +6,7 @@ export function Testimonials() {
     <section className="testimonials section" id="testimonials">
       <div className="section-heading section-heading--wide">
         <p className="section-kicker" data-reveal>
-          06 - Testimonials
+          07 - Testimonials
         </p>
         <h2 data-reveal>Client feedback built around clarity, reliability, and clean execution.</h2>
       </div>

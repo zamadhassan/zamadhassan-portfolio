@@ -1,6 +1,6 @@
 import { skills } from "@/data/skills";
 import {
-  SiCss,
+  SiCss3,
   SiElementor,
   SiFigma,
   SiHtml5,
@@ -18,7 +18,7 @@ const skillIcons = {
   Wix: SiWix,
   Shopify: SiShopify,
   HTML: SiHtml5,
-  CSS: SiCss,
+  CSS: SiCss3,
   JavaScript: SiJavascript,
   PHP: SiPhp,
   Figma: SiFigma,
