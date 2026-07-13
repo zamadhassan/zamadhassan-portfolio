@@ -6,7 +6,7 @@ export function Contact() {
     <section className="contact section" id="contact">
       <div className="contact__content">
         <p className="section-kicker" data-reveal>
-          06 - Contact
+          07 - Contact
         </p>
         <h2 data-reveal>Have a project in mind?</h2>
         <p data-reveal>

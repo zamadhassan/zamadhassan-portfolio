@@ -8,6 +8,7 @@ export const contact = {
 export const navigation = [
   { label: "Work", href: "#work" },
   { label: "Services", href: "#services" },
+  { label: "Reviews", href: "#testimonials" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
